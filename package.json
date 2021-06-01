@@ -1,0 +1,19 @@
+{
+  "name": "gumfree",
+  "version": "1.0.0",
+  "description": "An app for sharing items and events",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ross-White/Gumfree.git"
+  },
+  "author": "Ross, Ollie, Luke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ross-White/Gumfree/issues"
+  },
+  "homepage": "https://github.com/Ross-White/Gumfree#readme"
+}
