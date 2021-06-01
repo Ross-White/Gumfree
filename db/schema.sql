@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS gumfree_db;
+CREATE DATABASE gumfree_db;
