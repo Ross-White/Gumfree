@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Ross-White/Gumfree/issues"
   },
-  "homepage": "https://github.com/Ross-White/Gumfree#readme"
+  "homepage": "https://github.com/Ross-White/Gumfree#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  }
 }
