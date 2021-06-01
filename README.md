@@ -1,2 +1,2 @@
 # Gumfree
-In app for sharing items and events
+An app for sharing items and events
