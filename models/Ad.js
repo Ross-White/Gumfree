@@ -4,7 +4,7 @@ const sequelize = require('../config/connection.js');
 class Ad extends Model {
 }
 
-User.init(
+Ad.init(
     {
         id: {
             type: DataTypes.INTEGER,
