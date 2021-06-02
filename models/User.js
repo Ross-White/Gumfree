@@ -1,8 +1,11 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, STRING } = require('sequelize');
 const sequelize = require('../config/connection.js');
+const bcrypt = require('bcrypt');
 
 class User extends Model {
-    // check pw function
+    checkPassword(pw) {
+        return bcrypt.compare(pw, this.password)
+    }
 }
 
 User.init(
@@ -18,9 +21,35 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+
+        email: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+
+        password: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                len: [6]
+            },
+        },
+
+        location_id: {
+            type: DataTypes.INTEGER,
+            //TODO reference to location model
+        },
     },
 
     {
+
+        hooks: {
+            beforeCreate: async (newUserData) => {
+                newUserData.password = await bcrypt.hash(newUserData.password, 10);
+                return newUserData;
+            }
+        },
+
         sequelize,
         timestamps: false,
         freezeTableName: false,
