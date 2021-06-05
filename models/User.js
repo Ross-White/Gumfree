@@ -38,6 +38,10 @@ User.init(
         location_id: {
             type: DataTypes.INTEGER,
             //TODO reference to location model
+            references: {
+                model: 'location',
+                key: 'id' 
+            }
         },
     },
 
