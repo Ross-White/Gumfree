@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Luke",
+        "email": "luke@test.com",
+        "password": "lukepass",
+        "location_id": 
+
+    },
+    {
+        "name": "Ollie",
+        "email": "ollie@test.com",
+        "password": "olliepass"
+    },
+    {
+        "name": "Ross",
+        "email": "ross@test.com",
+        "password": "rosspass"
+    }
+]

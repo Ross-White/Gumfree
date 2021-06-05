@@ -2,7 +2,7 @@ const sequelize = require('../config/connection');
 const { User, Location, Categories, Ad } = require('../models');
 
 const userData = require('./userSeeds.json');
-const locationData = require('./locationData.json');
+const locationData = require('./locationSeeds.json');
 const categoryData = require('./categorySeeds.json');
 const adData = require('./adSeeds.json')
 
