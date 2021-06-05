@@ -6,36 +6,35 @@ const Item = require('./Item');
 
 
 User.hasMany(Item, {
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
 })
 
 
 Item.belongsTo(User, {
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
 })
 
 
-Item.hasOne(Location, {
-    foreignKey: 'item_id'
-})
+// Item.hasOne(Location, {
+//     foreignKey: 'location_id',
+// })
 
-
-Item.hasOne(Categories, {
-    foreignKey: 'item_id'
+Item.belongsTo(Categories, {
+    foreignKey: 'category_id',
 })
 
 Categories.hasMany(Item, {
-    foreignKey: 'category_id'
+    foreignKey: 'category_id',
 })
 
 // user has one location
-User.hasOne(Location, {
-    foreignKey: 'user_id'
+User.belongsTo(Location, {
+    foreignKey: 'location_id',
 })
 
 // locations have many users
 Location.hasMany(User, {
-    foreignKey: 'user_id'
+    foreignKey: 'location_id',
 })
 
 module.exports = { User, Location, Categories, Item };
