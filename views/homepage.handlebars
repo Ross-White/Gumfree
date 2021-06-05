@@ -1,7 +1,8 @@
 <div class="min-h-screen bg-gray-50">
-    {{#each plainData as |category|}}
-        <article class="bg-gray-400">
-            <h1>{{name}}</h1>
-        </article>
-    {{/each}}
+    <h1 class="text-2xl px-4 pt-2">Select a category</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-4 p-4">
+        {{#each plainData as |category|}}
+        <a href="/"><article class="bg-green-400 rounded h-24">{{name}}</article></a>
+        {{/each}}
+    </div>
 </div>
