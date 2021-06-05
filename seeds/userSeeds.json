@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Luke",
+        "email": "luke@test.com",
+        "password": "lukepass",
+        "location_id": 5
+    },
+    {
+        "name": "Ollie",
+        "email": "ollie@test.com",
+        "password": "olliepass",
+        "location_id": 5
+
+    },
+    {
+        "name": "Ross",
+        "email": "ross@test.com",
+        "password": "rosspass",
+        "location_id": 2
+
+    }
+]

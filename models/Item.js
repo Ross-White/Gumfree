@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection.js');
 
-class Ad extends Model {
+class Item extends Model {
 }
 
-Ad.init(
+Item.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -27,9 +27,12 @@ Ad.init(
             type: DataTypes.DATE,
             allowNull: true,
         },
-        // image: {
-        //     type:
-        // }
+        offered: {
+            type: DataTypes.BOOLEAN,
+        },
+        available: {
+            type: DataTypes.BOOLEAN,
+        },
         user_id: {
             type: DataTypes.INTEGER,
             references: {
@@ -61,4 +64,4 @@ Ad.init(
     }
 );
 
-module.exports = Ad;
+module.exports = Item;

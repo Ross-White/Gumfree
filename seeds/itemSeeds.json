@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Sofa",
+        "description": "Dirty old sofa",
+        "quantity": 1,
+        "date": 5,
+        "offered": true,
+        "available": true,
+        "user_id": 1,
+        "category_id": 1,
+        "location_id": 1
+    },
+    {
+        "title": "Bike",
+        "description": "Hipster fixie bike",
+        "quantity": "1",
+        "date": 5,
+        "offered": true,
+        "available": true,
+        "user_id": 2,
+        "category_id": 2,
+        "location_id": 1
+    },
+    {
+        "title": "Garden furniture",
+        "description": "Set of table and six chairs for the garden",
+        "quantity": "1",
+        "date": 2,
+        "offered": false,
+        "available": true,
+        "user_id": 2,
+        "category_id": 1,
+        "location_id": 5
+    },
+    {
+        "title": "Used laptop",
+        "description": "Two year old laptop",
+        "quantity": "1",
+        "date": 2,
+        "offered": true,
+        "available": true,
+        "user_id": 3,
+        "category_id": 3,
+        "location_id": 2
+    }
+]
