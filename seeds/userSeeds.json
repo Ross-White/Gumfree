@@ -1,19 +1,19 @@
 [
     {
-        "name": "Luke",
+        "username": "Luke",
         "email": "luke@test.com",
         "password": "lukepass",
         "location_id": 5
     },
     {
-        "name": "Ollie",
+        "username": "Ollie",
         "email": "ollie@test.com",
         "password": "olliepass",
         "location_id": 5
 
     },
     {
-        "name": "Ross",
+        "username": "Ross",
         "email": "ross@test.com",
         "password": "rosspass",
         "location_id": 2
