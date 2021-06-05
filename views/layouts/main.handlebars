@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles.css">
     <title>GumFree</title>
 </head>
+
 <body>
-   {{{body}}}
+
+    {{!-- header and navigation --}}
+    <header class="bg-gray-100">
+        <nav class="mx-auto px-4">
+            <div class="flex justify-between">
+
+                {{!-- left side title icon and nav --}}
+                <div class="flex">
+                    {{!-- title and logo --}}
+                    <a class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900"href="/">
+                        <span><i class="fas fa-2x fa-tree"></i></span>
+                        <h1 class="text-3xl">GumFree</h1>
+                    </a>
+
+                    {{!-- nav --}}
+                    <div class="flex items-center space-x-1">
+                        <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900">Ads</a>
+                        <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900">My Account</a>
+                    </div>
+                </div>
+
+                {{!-- right side login signup --}}
+                <div class="flex items-center space-x-1">
+                    <a href="/login" class="py-5 px-3">Login</a>
+                    <a href="/signup" class="py-5 px-3">Signup</a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    {{{body}}}
+
+    <footer class="bg-gray-600">
+        <div class="mx-auto px-4 h-24">
+            <div class="flex justify-center">
+                <p class="text-gray-100">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
