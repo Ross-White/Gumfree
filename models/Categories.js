@@ -18,6 +18,10 @@ Categories.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+
+        img_path: {
+            type: DataTypes.STRING,
+        }
     },
 
     {
