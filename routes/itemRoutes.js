@@ -1,4 +1,5 @@
 const router = require('express').Router();
+
 const {User, Location, Item, Categories } = require('../models')
 
 router.get('/', async, (req, res) => {
@@ -8,5 +9,11 @@ router.get('/', async, (req, res) => {
         res.status(400).json(err)
     }
 })
+
+
+router.get('/items', (req, res) => {
+    res.render('items');
+});
+
 
 module.exports = router;
