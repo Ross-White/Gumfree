@@ -4,7 +4,8 @@
         "img_path": "/assets/img/category_images/furniture.jpg"
     },
     {
-        "name": "Transport"
+        "name": "Transport",
+        "img_path": "/assets/img/category_images/bike.jpg"
     },
     {
         "name": "Electronics"
