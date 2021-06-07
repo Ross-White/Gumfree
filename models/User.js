@@ -42,6 +42,11 @@ User.init(
                 key: 'id' 
             }
         },
+
+        postcode: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
     },
 
     {
