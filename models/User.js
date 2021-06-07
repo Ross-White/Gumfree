@@ -34,6 +34,9 @@ User.init(
                 len: [6]
             },
         },
+        position: {
+            type: DataTypes.GEOMETRY('POINT', 4326)
+        },
 
         location_id: {
             type: DataTypes.INTEGER,
