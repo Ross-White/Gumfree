@@ -2,7 +2,7 @@
     <h1 class="text-2xl px-4 pt-2">Select a category</h1>
     <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-4 p-4">
         {{#each plainData as |category|}}
-        <a href="items/category/{{id}}"><article class="bg-green-400 rounded h-24 shadow">{{name}}</article></a>
+        <a href="items/category/{{id}}"><article class="p-4 bg-green-400 rounded h-48 shadow" style="background-image: url({{img_path}}); background-size: cover;">{{name}}</article></a>
         {{/each}}
     </div>
 </div>
