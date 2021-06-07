@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 const {User, Location, Item, Categories } = require('../models')
 
-router.get('/', async, (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const itemData = await Item.findAll();
     } catch(err) {
