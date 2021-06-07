@@ -8,6 +8,7 @@
         "img_path": "/assets/img/category_images/bike.jpg"
     },
     {
-        "name": "Electronics"
+        "name": "Electronics",
+        "img_path": "/assets/img/category_images/electricals.jpg"
     }
 ]
