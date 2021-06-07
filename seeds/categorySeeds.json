@@ -1,6 +1,7 @@
 [
     {
-        "name": "Furniture"
+        "name": "Furniture",
+        "img_path": "/assets/img/category_images/furniture.jpg"
     },
     {
         "name": "Transport"
