@@ -1,8 +1,8 @@
 const router = require('express').Router();
+const {User, Item, Categories } = require('../models');
+const withAuth = require('../utils/auth');
 
-const {User, Location, Item, Categories } = require('../models')
-
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     try {
         const itemData = await Item.findAll();
         res.status(200).json(itemData)
@@ -16,7 +16,7 @@ router.get('/new', (req, res) => {
 })
 
 // render items by category page
-router.get('/category/:id', async (req, res) => {
+router.get('/category/:id', withAuth, async (req, res) => {
     try {
         const itemData = await Item.findAll({
             where: {

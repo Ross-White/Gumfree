@@ -1,9 +1,10 @@
 const router = require('express').Router();
-const {User, Location, Item, Categories } = require('../models')
+const {User, Item, Categories } = require('../models');
+const withAuth = require('../utils/auth');
 
 
 // render dashboard
-router.get('/', (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     res.render('dashboard')
 })
 
