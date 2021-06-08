@@ -1,19 +1,8 @@
 <div class="min-h-screen bg-gray-50">
-    <h1 class="text-2xl px-4 pt-2">Your ads</h1>
+    <h1 class="text-2xl px-4 pt-2">Your account</h1>
+    <h3 class="px-4 pt-2">View your items and post new ads</h3>
     <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4 p-4">
-        {{#if plainData}}
-        {{#each plainData as |item|}}
-        <a href="items/category/{{id}}">
-            <article class="opacity-75 hover:opacity-100 bg-green-400 rounded h-60 shadow"
-                style="background-image: url({{img_path}}); background-size: cover;">
-                <h3 class="p-2 bg-gray-200 text-gray-600 font-black tracking-widest">{{name}}</h3>
-            </article>
-        </a>
-        {{/each}}
-        {{else}}
-        <h2 class="text-xl px-4 pt-2">You don't have any active ads at the moment</h2>
-        <h3>What would you like to do next?</h3>
-        {{/if}}
+
 
         <a href="/">
             <article
