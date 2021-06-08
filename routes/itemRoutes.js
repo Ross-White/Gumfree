@@ -11,6 +11,10 @@ router.get('/', async (req, res) => {
     }
 })
 
+router.get('/new', (req, res) => {
+    res.send('New item page')
+})
+
 // render items by category page
 router.get('/category/:id', async (req, res) => {
     try {
