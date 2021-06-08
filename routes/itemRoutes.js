@@ -1,12 +1,12 @@
 const router = require('express').Router();
-const {User, Item, Categories } = require('../models');
+const { User, Item, Categories } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
     try {
         const itemData = await Item.findAll();
         res.status(200).json(itemData)
-    } catch(err) {
+    } catch (err) {
         res.status(400).json(err)
     }
 })
@@ -25,7 +25,10 @@ router.get('/category/:id', withAuth, async (req, res) => {
         })
         const items = itemData.map((item) => item.get({ plain: true }))
         // res.status(200).json(itemData)
-        res.render('items-page', { items })
+        res.render('items-page', {
+            items,
+            logged_in: req.session.logged_in
+        });
     } catch (err) {
         res.status(500).json(err)
     }
