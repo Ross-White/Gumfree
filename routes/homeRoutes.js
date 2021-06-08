@@ -15,8 +15,10 @@ router.get('/', async (req, res) => {
         const catData = await Categories.findAll();
 
         const plainData = catData.map((cat) => cat.get({ plain: true }))
-        res.render('homepage', {plainData})
-
+        res.render('homepage', {
+        plainData,
+        logged_in: req.session.logged_in
+    });
     } catch (err) {
         res.status(403).json(err)
     }
