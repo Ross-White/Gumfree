@@ -11,7 +11,7 @@ async function getCoords(postcode) {
   return coords;
 }
 
-getCoords('OL139RW');
+// getCoords('OL139RW');
 
 module.exports = getCoords;
 

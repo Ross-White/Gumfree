@@ -34,21 +34,8 @@ User.init(
                 len: [6]
             },
         },
-        position: {
+        location: {
             type: DataTypes.GEOMETRY('POINT', 4326)
-        },
-
-        location_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'location',
-                key: 'id' 
-            }
-        },
-
-        postcode: {
-            type: DataTypes.STRING,
-            allowNull: false,
         },
     },
 
