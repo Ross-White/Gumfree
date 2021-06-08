@@ -1,21 +1,28 @@
 <div class="min-h-screen bg-gray-50">
     {{!-- category cards --}}
+    <section>
+        <h4 class="bg-gray-200 text-gray-600 flex p-4 text-2xl align-middle justify-center border-4">Welcome to GumFree! Advertise your unwanted
+            things and give them a new home.</h4>
+    </section>
     <h1 class="text-2xl px-4 pt-2">Featured categories</h1>
     <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4 p-4">
         {{#each plainData as |category|}}
         <a href="items/category/{{id}}">
             <article class="opacity-75 hover:opacity-100 bg-green-400 rounded h-60 shadow"
                 style="background-image: url({{img_path}}); background-size: cover;">
-                <h3 class="p-2 bg-gray-200 text-gray-600 font-black tracking-widest">{{name}}</h3></article>
+                <h3 class="p-2 bg-gray-200 text-gray-600 font-black tracking-widest">{{name}}</h3>
+            </article>
         </a>
         {{/each}}
-        <a  class="md:col-span-2" href="/">
-            <article class="opacity-75 hover:opacity-100 p-4 bg-green-400 rounded h-60 text-gray-50 font-black tracking-widest shadow"
+        <a class="md:col-span-2" href="/">
+            <article
+                class="opacity-75 hover:opacity-100 p-4 bg-green-400 rounded h-60 text-gray-50 font-black tracking-widest shadow"
                 style="background-image: url(/assets/img/category_images/map.jpg); background-size: cover;">In my area
             </article>
         </a>
         <a href="/">
-            <article class="opacity-75 hover:opacity-100 p-4 bg-green-400 rounded h-60 text-gray-50 font-black tracking-widest shadow"
+            <article
+                class="opacity-75 hover:opacity-100 p-4 bg-green-400 rounded h-60 text-gray-50 font-black tracking-widest shadow"
                 style="background-image: url(/assets/img/category_images/latest.jpg); background-size: 100%;">Latest ads
             </article>
         </a>
