@@ -3,20 +3,42 @@
         "username": "Luke",
         "email": "luke@test.com",
         "password": "lukepass",
-        "location_id": 5
+        "lat": 53.396055,
+        "long": -2.208408
     },
     {
         "username": "Ollie",
         "email": "ollie@test.com",
         "password": "olliepass",
-        "location_id": 5
-
+        "lat": 53.59078,
+        "long": -2.267363
     },
     {
         "username": "Ross",
         "email": "ross@test.com",
         "password": "rosspass",
-        "location_id": 2
-
+        "lat": 53.615496,
+        "long": -2.268275
+    },
+    {
+        "username": "Alan",
+        "email": "alans@test.com",
+        "password": "alanpass",
+        "lat": 53.6940302,
+        "long": -2.2559579
+    },
+    {
+        "username": "Sarah",
+        "email": "sarah@test.com",
+        "password": "sarahpass",
+        "lat": 53.367339,
+        "long": -2.257515
+    },
+    {
+        "username": "Jessica",
+        "email": "jass@test.com",
+        "password": "jasspass",
+        "lat": 53.414057,
+        "long": -2.204674
     }
 ]

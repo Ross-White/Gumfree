@@ -34,13 +34,8 @@ User.init(
                 len: [6]
             },
         },
-
-        location_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'location',
-                key: 'id' 
-            }
+        location: {
+            type: DataTypes.GEOMETRY('POINT', 4326)
         },
     },
 

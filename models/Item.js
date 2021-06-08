@@ -47,13 +47,6 @@ Item.init(
                 key: 'id',
             },
         },
-        location_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'location',
-                key: 'id',
-            },
-        },
     },
     {
         sequelize,
