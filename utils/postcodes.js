@@ -1,17 +1,16 @@
 const fetch = require("node-fetch");
 
-async function getCoords(postcode) {
+async function getLocation(postcode) {
   const data = await fetch(`https://api.postcodes.io/postcodes/${postcode}`, {
     method: "GET",
   });
   const {result} = await data.json();
-  const { latitude, longitude } = result;
-  const coords = [latitude, longitude];
-  console.log(coords);
-  return coords;
+  const { admin_district } = result;
+  console.log(admin_district);
+  return admin_district;
 }
 
-// getCoords('OL139RW');
+getLocation('M169RE');
 
-module.exports = getCoords;
+module.exports = getLocation;
 
