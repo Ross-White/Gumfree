@@ -2,10 +2,10 @@ const { User } = require('../../models');
 
 const signupController = async (req, res) => {
     try {
-        let point = {
-            type: 'Point',
-            coordinates: [req.body.long, req.body.lat],
-        }
+        // let point = {
+        //     type: 'Point',
+        //     coordinates: [req.body.long, req.body.lat],
+        // }
         const userData = await User.create({
             username: req.body.username,
             email: req.body.email,

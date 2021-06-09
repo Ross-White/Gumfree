@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection.js');
+const getCounty = require('../utils/postcodes.js')
 
 class Item extends Model {
 }
