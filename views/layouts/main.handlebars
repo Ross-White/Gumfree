@@ -34,7 +34,12 @@
 
                 {{!-- right side login signup --}}
                 <div class="flex items-center space-x-1">
+                    {{#if logged_in}}
+                    <a href="/"class="py-5 px-3 logout">Logout</a>
+                    {{/if}}
+                    {{#unless logged_in}}
                     <a href="/login" class="py-5 px-3">Login</a>
+                    {{/unless}}
                     <a href="/signup" class="py-5 px-3">Signup</a>
                 </div>
 
@@ -51,7 +56,9 @@
             </div>
         </div>
     </footer>
-
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>
