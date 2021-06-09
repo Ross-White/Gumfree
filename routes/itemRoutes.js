@@ -35,6 +35,8 @@ router.get('/category/:id', withAuth, async (req, res) => {
     }
 })
 
-router.get('/all', withAuth, getAllItemsController);
+router.get('/all', (req, res) => {
+    res.render('all-items');
+});
 
 module.exports = router;
