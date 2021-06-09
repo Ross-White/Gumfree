@@ -59,6 +59,15 @@ router.get('/category/:id', withAuth, async (req, res) => {
     }
 })
 
+router.get('/location', withAuth, async (req, res) => {
+    
+    try {
+        
+    } catch (err) {
+        res.status(500).json(err)
+    }
+})
+
 router.get('/all', (req, res) => {
     res.render('all-items');
 });

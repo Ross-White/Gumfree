@@ -1,6 +1,7 @@
 const { Model, DataTypes, STRING } = require('sequelize');
 const sequelize = require('../config/connection.js');
 const bcrypt = require('bcrypt');
+const getLocation = require('../utils/postcodes.js')
 
 class User extends Model {
     checkPassword(pw) {
@@ -34,9 +35,19 @@ User.init(
                 len: [6]
             },
         },
-        location: {
-            type: DataTypes.GEOMETRY('POINT', 4326)
+
+        postcode: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                len: [4]
+            },
         },
+
+        location: {
+            type: DataTypes.STRING,
+        },
+
     },
 
     {
@@ -44,6 +55,11 @@ User.init(
         hooks: {
             beforeCreate: async (newUserData) => {
                 newUserData.password = await bcrypt.hash(newUserData.password, 10);
+                return newUserData;
+            },
+
+            beforeCreate: async (newUserData) => {
+                newUserData.location = await getLocation(newUserData.postcode);
                 return newUserData;
             }
         },

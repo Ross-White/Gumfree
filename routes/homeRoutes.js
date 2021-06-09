@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
         const plainData = catData.map((cat) => cat.get({ plain: true }))
         res.render('homepage', {
         plainData,
-        logged_in: req.session.logged_in
+        logged_in: req.session.logged_in,
     });
     } catch (err) {
         res.status(403).json(err)
