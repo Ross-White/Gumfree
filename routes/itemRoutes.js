@@ -3,14 +3,21 @@ const { User, Item, Categories } = require('../models');
 const withAuth = require('../utils/auth');
 const getAllItemsController = require('../controllers/itemControllers/getAllItemsController');
 
-router.get('/', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
     try {
-        const itemData = await Item.findAll();
+        const itemData = await Item.findAll({
+            include: 
+            {
+                model: User,
+                attributes: ["username", "email", "location"]
+            },
+        });
         res.status(200).json(itemData)
     } catch (err) {
         res.status(400).json(err)
     }
-})
+});
+
 
 router.get('/new', (req, res) => {
     res.send('New item page')
