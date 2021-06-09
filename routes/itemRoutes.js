@@ -59,6 +59,8 @@ router.get('/category/:id', withAuth, async (req, res) => {
     }
 })
 
+<<<<<<< HEAD
+=======
 router.get('/location', withAuth, async (req, res) => {
     
     try {
@@ -72,4 +74,5 @@ router.get('/all', (req, res) => {
     res.render('all-items');
 });
 
+>>>>>>> db8f596894790f96f04f93f8a6f2d773b39efe71
 module.exports = router;
