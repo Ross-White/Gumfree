@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { User, Item, Categories } = require('../models');
 const withAuth = require('../utils/auth');
+const getAllItemsController = require('../controllers/itemControllers/getAllItemsController');
 
 router.get('/', withAuth, async (req, res) => {
     try {
@@ -33,5 +34,7 @@ router.get('/category/:id', withAuth, async (req, res) => {
         res.status(500).json(err)
     }
 })
+
+router.get('/all', withAuth, getAllItemsController);
 
 module.exports = router;
