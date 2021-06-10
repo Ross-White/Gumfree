@@ -3,48 +3,54 @@
         "username": "Luke",
         "email": "luke@test.com",
         "password": "lukepass",
-        "postcode": "OL139RW",
-        "lat": 53.396055,
-        "long": -2.208408
+        "postcode": "OL139RW"
     },
     {
         "username": "Ollie",
         "email": "ollie@test.com",
         "password": "olliepass",
-        "postcode": "OL114DH",
-        "lat": 53.59078,
-        "long": -2.267363
+        "postcode": "OL114DH"
     },
     {
         "username": "Ross",
         "email": "ross@test.com",
         "password": "rosspass",
-        "postcode": "M169RE",
-        "lat": 53.615496,
-        "long": -2.268275
+        "postcode": "M169RE"
     },
     {
         "username": "Alan",
         "email": "alans@test.com",
         "password": "alanpass",
-        "postcode": "M309QA",
-        "lat": 53.6940302,
-        "long": -2.2559579
+        "postcode": "M309QA"
     },
     {
         "username": "Sarah",
         "email": "sarah@test.com",
         "password": "sarahpass",
-        "postcode": "M11AR",
-        "lat": 53.367339,
-        "long": -2.257515
+        "postcode": "M11AR"
     },
     {
         "username": "Jessica",
-        "email": "jass@test.com",
+        "email": "jess@test.com",
         "password": "jasspass",
-        "postcode": "M309QA",
-        "lat": 53.414057,
-        "long": -2.204674
+        "postcode": "M309QA"
+    },
+    {
+        "username": "Wendy",
+        "email": "Wendy@test.com",
+        "password": "wendypass",
+        "postcode": "M359AR"
+    },
+    {
+        "username": "Pavel",
+        "email": "pav@test.com",
+        "password": "pavpass",
+        "postcode": "M11AR"
+    },
+    {
+        "username": "Dave",
+        "email": "dave@test.com",
+        "password": "davepass",
+        "postcode": "SK43DG"
     }
 ]
