@@ -24,4 +24,25 @@ router.get('/', async (req, res) => {
     }
 })
 
+router.get('/location', async (req, res) => {
+    try {
+        const itemData = await Item.findAll({
+            where: {
+                location: req.session.location,
+            },
+            include: 
+            {
+                model: User,
+                attributes: ["username", "email", "location"]
+            },
+        });
+        const items = itemData.map((item) =>item.get({ plain: true }));
+        res.render('all-items', {
+            items
+        })
+    } catch (err) {
+        res.status(400).json(err)
+    }
+});
+
 module.exports = router;
