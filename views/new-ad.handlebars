@@ -1,5 +1,5 @@
-<div class="min-h-screen bg-gray-50">
-    <form method="post">
+<div href="dashboard/additem" class="min-h-screen bg-gray-50" >
+    <form method="post" action="formsub">
         <p> Name of your product:
             <input type="text" name="title" maxlength="50" />
         </p>
@@ -20,8 +20,8 @@
             <input type="checkbox" name="offered" /> No
         </p>
         <p> Available:
-            <input type="checkbox" name="offered" checked="checked" /> Yes
-            <input type="checkbox" name="offered" /> No
+            <input type="checkbox" name="available" checked="checked" /> Yes
+            <input type="checkbox" name="available" /> No
         </p>
     </form>
     <form method="post" action="formsub" enctype="multipart/form-data">
