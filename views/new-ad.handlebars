@@ -1,18 +1,21 @@
 <div href="dashboard/additem" class="min-h-screen bg-gray-50" >
     <form method="post" action="formsub">
         <p> Name of your product:
-            <input type="text" name="title" maxlength="50" />
+            <input type="text" name="title" maxlength="50" id="title"/>
         </p>
         <p> Description: </p>
-            <textarea name="description" maxlength="400">Enter your product description</textarea>
+            <textarea name="description" maxlength="400" "50" id="desription">Enter your product description</textarea>
         <p> Quantity:
-            <input type="text" name="quantity" />
+            <input type="text" name="quantity" "50" id="quantity"/>
         </p>
         <p> Category:
             <select name="category">
-                <option value="furniture">Furniture</option>
-                <option value="transport">Transport</option>
-                <option value="electronics">Electronics</option>
+                <option value="furniture" id="furniture">Furniture</option>
+                <option value="transport" id="transport">Transport</option>
+                <option value="electronics" id="electronics">Electronics</option>
+                <option value="books" id="books">Books</option>
+                <option value="garden" id="garden">Garden</option>
+                <option value="clothing" id="clothing">Clothing</option>
             </select>
         </p>
         <p> Offered:
@@ -31,3 +34,5 @@
         <input type="submit" value="submit" />
     </form>
 </div>
+
+<script src="./js/newItem.js"></script>

@@ -19,11 +19,11 @@ const uploadS3 = multer({
       },
       key: (req, file, cb)=>{
         cb(null, Date.now().toString()+file.originalname)
+        
       }
     })
   })
 
-  router.post('/uploads3', uploadS3.single('product-image'), (req, res, next)=>{
-    res.json("File uploaded to s3")
-    console.log(req.file);
-  })
+  module.exports = uploadS3;
+
+
