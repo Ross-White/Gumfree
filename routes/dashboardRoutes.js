@@ -10,4 +10,8 @@ router.get('/', withAuth, async (req, res) => {
     });
 })
 
+router.get('/additem', async (req, res)=> {
+    res.render('new-ad')
+});
+
 module.exports = router;
