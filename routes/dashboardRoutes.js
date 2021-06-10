@@ -31,7 +31,6 @@ router.get('/additem', async (req, res) => {
 router.post('/formsub', uploadS3.single('product-image'), async (req, res, next) => {
     console.log('File Location:  ', req.file.location);
     console.log('Req body:  ', req.body);
-    if (title && description && category && offered) {
         try {
             const itemData = await Item.create({
                 title: req.body.title,
@@ -48,7 +47,6 @@ router.post('/formsub', uploadS3.single('product-image'), async (req, res, next)
         } catch (err) {
             res.status(400).json(err);
         }
-    }
 });
 
 module.exports = router;
