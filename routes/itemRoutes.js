@@ -45,9 +45,14 @@ router.get('/category/:id', withAuth, async (req, res) => {
         const itemData = await Item.findAll({
             where: {
                 category_id: req.params.id,
+            },
+
+            include: {
+                model: User,
             }
         })
         const items = itemData.map((item) => item.get({ plain: true }))
+        console.log(items)
         res.render('items-page', {
             items,
             logged_in: req.session.logged_in
