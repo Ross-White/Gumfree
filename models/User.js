@@ -46,6 +46,7 @@ User.init(
 
         location: {
             type: DataTypes.STRING,
+            allowNull: false
         },
 
     },
