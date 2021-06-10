@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const {User, Location, Item, Categories } = require('../models')
+const {User, Location, Item, Categories } = require('../models');
+const withAuth = require('../utils/auth');
 
 router.get('/login', (req, res) => {
     res.render('login');
@@ -24,7 +25,7 @@ router.get('/', async (req, res) => {
     }
 })
 
-router.get('/location', async (req, res) => {
+router.get('/location', withAuth, async (req, res) => {
     try {
         const itemData = await Item.findAll({
             where: {
