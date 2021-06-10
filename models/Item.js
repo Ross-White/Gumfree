@@ -34,6 +34,10 @@ Item.init(
         available: {
             type: DataTypes.BOOLEAN,
         },
+        location: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
         user_id: {
             type: DataTypes.INTEGER,
             references: {

@@ -13,6 +13,7 @@ const loginController = async (req, res) => {
             req.session.logged_in = true;
             req.session.location = userData.location;
             res.json({ user: userData, message: 'You are now logged in!' });
+            console.log('User ID: ', req.session.user_id, 'Location: ', req.session.location);
         });
     } catch (err) {
         res.status(400).json(err);
