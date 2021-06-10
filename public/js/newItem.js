@@ -28,14 +28,13 @@ const uploadS3 = multer({
   const newItemFormHandler = async (event) => {
     event.preventDefault();
     const title = document.querySelector('#title').value.trim();
-    const desc = document.querySelector('#desription').value.trim();
-    const qty = document.querySelector('#quantity').value.trim();
-    const category = document.querySelector('#category').value.trim();
+    const description = document.querySelector('#desription').value.trim();
+    const category = document.querySelector('#category').value;
     const offered = document.querySelector('#offered').value.trim();
-    if (title && desc && qty && category && offered) {
+    if (title && description && category && offered) {
         const response = await fetch('/api/users', {
           method: 'POST',
-          body: JSON.stringify({ title, desc, qty, category, offered }),
+          body: JSON.stringify({ title, description, category, offered }),
           headers: { 'Content-Type': 'application/json' },
         });
         console.log(response);   

@@ -62,7 +62,8 @@ router.get('/location', async (req, res) => {
     try {
         const itemData = await Item.findAll({
             where: {
-                location: req.session.location,
+                // location: req.session.location,
+                offered: true,
             }
         })
         // const items = itemData.map((item) => item.get({ plain: true }))

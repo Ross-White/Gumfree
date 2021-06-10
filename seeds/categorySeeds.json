@@ -1,25 +1,31 @@
 [
     {
+        "id": 1,
         "name": "Furniture",
         "img_path": "/assets/img/category_images/furniture.jpg"
     },
     {
+        "id": 2,
         "name": "Garden",
         "img_path": "/assets/img/category_images/garden.jpg"
     },
     {
+        "id": 3,
         "name": "Transport",
         "img_path": "/assets/img/category_images/bike.jpg"
     },
     {
+        "id": 4,
         "name": "Electronics",
         "img_path": "/assets/img/category_images/electricals.jpg"
     },
     {
+        "id": 5,
         "name": "Clothing",
         "img_path": "/assets/img/category_images/clothes.jpg"
     },
     {
+        "id": 6,
         "name": "Books",
         "img_path": "/assets/img/category_images/books.jpg"
     }

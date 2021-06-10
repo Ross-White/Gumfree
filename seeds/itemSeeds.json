@@ -6,7 +6,8 @@
         "available": true,
         "user_id": 1,
         "location": "Rossendale",
-        "category_id": 1
+        "category_id": 1,
+        "image_url": "https://www.boconcept.com/on/demandware.static/-/Sites-master-catalog/default/dw7429ad62/images/710000/719958.jpg"
     },
     {
         "title": "Bike",
@@ -15,7 +16,8 @@
         "available": true,
         "user_id": 2,
         "location": "Manchester",
-        "category_id": 3
+        "category_id": 3,
+        "image_url": "https://www.boconcept.com/on/demandware.static/-/Sites-master-catalog/default/dw7429ad62/images/710000/719958.jpg"
     },
     {
         "title": "Garden furniture",
@@ -24,7 +26,8 @@
         "available": true,
         "user_id": 2,
         "location": "Manchester",
-        "category_id": 2
+        "category_id": 2,
+        "image_url": "https://www.boconcept.com/on/demandware.static/-/Sites-master-catalog/default/dw7429ad62/images/710000/719958.jpg"
     },
     {
         "title": "Used laptop",
