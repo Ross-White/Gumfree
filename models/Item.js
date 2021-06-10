@@ -20,19 +20,14 @@ Item.init(
         description: {
             type: DataTypes.STRING,
         },
-        quantity: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-        },
-        date: {
-            type: DataTypes.DATE,
-            allowNull: true,
-        },
         offered: {
             type: DataTypes.BOOLEAN,
         },
         available: {
             type: DataTypes.BOOLEAN,
+        },
+        location: {
+            type: DataTypes.STRING,
         },
         user_id: {
             type: DataTypes.INTEGER,
