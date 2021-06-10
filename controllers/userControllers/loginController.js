@@ -11,6 +11,7 @@ const loginController = async (req, res) => {
         req.session.save(() => {
             req.session.user_id = userData.id;
             req.session.logged_in = true;
+            req.session.location = userData.location;
             res.json({ user: userData, message: 'You are now logged in!' });
         });
     } catch (err) {
