@@ -49,7 +49,6 @@ router.get('/category/:id', withAuth, async (req, res) => {
             }
         })
         const items = itemData.map((item) => item.get({ plain: true }))
-        res.status(200).json(itemData)
         res.render('items-page', {
             items,
             logged_in: req.session.logged_in

@@ -2,37 +2,145 @@
     {
         "title": "Sofa",
         "description": "Dirty old sofa",
-        "quantity": 1,
         "offered": true,
         "available": true,
         "user_id": 1,
+        "location": "Rossendale",
         "category_id": 1
     },
     {
         "title": "Bike",
         "description": "Hipster fixie bike",
-        "quantity": "1",
         "offered": true,
         "available": true,
         "user_id": 2,
-        "category_id": 2
+        "location": "Manchester",
+        "category_id": 3
     },
     {
         "title": "Garden furniture",
         "description": "Set of table and six chairs for the garden",
-        "quantity": "1",
         "offered": false,
         "available": true,
         "user_id": 2,
-        "category_id": 1
+        "location": "Manchester",
+        "category_id": 2
     },
     {
         "title": "Used laptop",
-        "description": "Two year old laptop",
-        "quantity": "1",
+        "description": "Two year old Huawei laptop, Windows 10",
         "offered": true,
         "available": true,
         "user_id": 3,
+        "location": "Manchester",
+        "category_id": 4
+    },
+    {
+        "title": "BBQ",
+        "description": "Large black Weber kettle BBQ",
+        "offered": true,
+        "available": true,
+        "user_id": 3,
+        "location": "Manchester",
+        "category_id": 2
+    },
+    {
+        "title": "Hats",
+        "description": "Collection of home made bobble hats",
+        "offered": true,
+        "available": true,
+        "user_id": 4,
+        "location": "Oldham",
+        "category_id": 5
+    },
+    {
+        "title": "Lord of the Rings",
+        "description": "Hardback set of the Hobbit/Lord of the rings, great condition",
+        "offered": true,
+        "available": true,
+        "user_id": 5,
+        "location": "Salford",
+        "category_id": 6
+    },
+    {
+        "title": "Encycolpedias",
+        "description": "Full set of Encyclopedia Brittanica",
+        "offered": true,
+        "available": true,
+        "user_id": 6,
+        "location": "Manchester",
+        "category_id": 6
+    },
+    {
+        "title": "Electric scooter",
+        "description": "Used electric scooter, slightly damaged from a crash",
+        "offered": true,
+        "available": true,
+        "user_id": 7,
+        "location": "Rochdale",
+        "category_id": 3
+    },
+    {
+        "title": "LED TV",
+        "description": "42 inch Samsung LED TV",
+        "offered": true,
+        "available": true,
+        "user_id": 8,
+        "location": "Salford",
+        "category_id": 4
+    },
+    {
+        "title": "Dining table and chairs",
+        "description": "Mid century teak dining table with 6 chairs",
+        "offered": false,
+        "available": true,
+        "user_id": 9,
+        "location": "Stockport",
+        "category_id": 1
+    },
+    {
+        "title": "Tuxedo",
+        "description": "Bespoke tuxedo, no longer fits me since lockdown",
+        "offered": true,
+        "available": true,
+        "user_id": 5,
+        "location": "Salford",
+        "category_id": 5
+    },
+    {
+        "title": "Mattress",
+        "description": "King Size pocket sprung, memory foam mattress",
+        "offered": true,
+        "available": true,
+        "user_id": 6,
+        "location": "Manchester",
+        "category_id": 1
+    },
+    {
+        "title": "Coffee Machine",
+        "description": "Gaggia classic espresso machine",
+        "offered": true,
+        "available": true,
+        "user_id": 6,
+        "location": "Manchester",
+        "category_id": 4
+    },
+    {
+        "title": "Holy Books",
+        "description": "Collection of holy books including: Bible, Torah, Quran, Vedas, Tipitaka",
+        "offered": true,
+        "available": true,
+        "user_id": 8,
+        "location": "Salford",
+        "category_id": 6
+    },
+    {
+        "title": "Skateboards",
+        "description": "Collection of 5 skateboards",
+        "offered": true,
+        "available": true,
+        "user_id": 9,
+        "location": "Stockport",
         "category_id": 3
     }
 ]
