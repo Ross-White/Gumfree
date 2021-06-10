@@ -1,4 +1,4 @@
 node_modules
 .env
 .jawsdb_url
-
+config.js
