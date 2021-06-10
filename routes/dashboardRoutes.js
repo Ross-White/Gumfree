@@ -6,9 +6,22 @@ const uploadS3 = require('../utils/multers3');
 
 // render dashboard
 router.get('/', withAuth, async (req, res) => {
-    res.render('dashboard', {
+    try {
+        const itemData = await Item.findAll({
+            where: {
+                user_id: req.session.user_id
+            }
+        }
+        );
+        const plainData = itemData.map((item) => item.get({ plain: true }))
+        res.render('dashboard', {
+        plainData,
         logged_in: req.session.logged_in,
+        isOwner: true,
     });
+    } catch (err) {
+        res.status(403).json(err)
+    }
 })
 
 router.get('/additem', async (req, res) => {
