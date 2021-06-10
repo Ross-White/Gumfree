@@ -5,7 +5,9 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const helmet = require('helmet');
 
+app.use(helmet());
 
 const app = express();
 const PORT = process.env.PORT || 3001;
