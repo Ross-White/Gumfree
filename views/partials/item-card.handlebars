@@ -1,22 +1,10 @@
-<div class="max-w-sm rounded overflow-hidden shadow-lg">
-  <img class="w-full" src="{{image_url}}" alt="{{description}}">
-  <div class="font-bold text-xl mb-2">{{title}}</div>
-  <p class="text-gray-700 text-base">
+<article class="rounded h-auto shadow flex-col">
+  <img src="{{image_url}}" alt="{{description}}" class="w-full">
+  <h3 class="p-2 bg-gray-200 text-gray-600 font-black tracking-widest">{{title}}</h3>
+  <p class="p-2 text-gray-600">
     {{description}}
   </p>
-  <p class="text-gray-700 text-base">
-    Number of {{title}}'s available: {{quantity}}
-  </p>
-  <div class="px-6 pt-4 pb-2">
-    <a href="mailto:{{user.email}}"
-      class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Contact
-      Owner</a>
+  <div class="flex justify-center">
+    <a href="mailto:{{user.email}}" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Contact Owner</a>
   </div>
-</div>
-
-<a href="items/category/{{id}}">
-  <article class="opacity-75 hover:opacity-100 bg-green-400 rounded h-60 shadow"
-    style="background-image: url({{img_path}}); background-size: cover;">
-    <h3 class="p-2 bg-gray-200 text-gray-600 font-black tracking-widest">{{name}}</h3>
-  </article>
-</a>
+</article>
