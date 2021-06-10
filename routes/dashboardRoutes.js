@@ -29,10 +29,8 @@ router.get('/additem', async (req, res) => {
 });
 
 router.post('/formsub', uploadS3.single('product-image'), async (req, res, next) => {
-    console.log('File Location:  ', req.file.location);
-    console.log('Req body:  ', req.body);
         try {
-            const itemData = await Item.create({
+            await Item.create({
                 title: req.body.title,
                 description: req.body.description,
                 category_id: req.body.category_id,
@@ -42,7 +40,6 @@ router.post('/formsub', uploadS3.single('product-image'), async (req, res, next)
                 location: req.session.location,
                 image_url: req.file.location
             });
-            // res.status(200).json(itemData);
             res.redirect('/dashboard')
         } catch (err) {
             res.status(400).json(err);

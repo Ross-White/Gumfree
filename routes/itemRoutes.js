@@ -35,11 +35,6 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-router.get('/new', (req, res) => {
-    res.send('New item page')
-})
-
-// render items by category page
 router.get('/category/:id', withAuth, async (req, res) => {
     try {
         const itemData = await Item.findAll({
@@ -60,28 +55,10 @@ router.get('/category/:id', withAuth, async (req, res) => {
     } catch (err) {
         res.status(500).json(err)
     }
-})
-
-
-router.get('/location', async (req, res) => {
-    try {
-        const itemData = await Item.findAll({
-            where: {
-                // location: req.session.location,
-                offered: true,
-            }
-        })
-        // const items = itemData.map((item) => item.get({ plain: true }))
-        console.log('Session Location:::::  ', req.session.location);
-        res.status(200).json(itemData);
-    } catch (err) {
-        res.status(500).json(err)
-    }
-})
-
-router.get('/all', (req, res) => {
-    res.render('all-items');
 });
+
+
+
 
 
 module.exports = router;

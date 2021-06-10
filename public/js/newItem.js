@@ -10,41 +10,41 @@ aws.config.update(config);
 const s3 = new aws.S3({});
 
 const uploadS3 = multer({
-    storage: multers3({
-      s3: s3,
-      acl: 'public-read',
-      bucket: 'multer-gumfree-bucket',
-      metadata: (req, file, cb) =>{
-        cb(null, {fieldName: file.fieldname})
-      },
-      key: (req, file, cb)=>{
-        cb(null, Date.now().toString()+file.originalname)
-        
-      }
-    })
-  })
-  module.exports = uploadS3;
+  storage: multers3({
+    s3: s3,
+    acl: 'public-read',
+    bucket: 'multer-gumfree-bucket',
+    metadata: (req, file, cb) => {
+      cb(null, { fieldName: file.fieldname })
+    },
+    key: (req, file, cb) => {
+      cb(null, Date.now().toString() + file.originalname)
 
-  const newItemFormHandler = async (event) => {
-    event.preventDefault();
-    const title = document.querySelector('#title').value.trim();
-    const description = document.querySelector('#desription').value.trim();
-    const category = document.querySelector('#category').value;
-    const offered = document.querySelector('#offered').value.trim();
-    if (title && description && category && offered) {
-        const response = await fetch('/api/users', {
-          method: 'POST',
-          body: JSON.stringify({ title, description, category, offered }),
-          headers: { 'Content-Type': 'application/json' },
-        });
-        console.log(response);   
-        if (response.ok) {
-          document.location.replace('/');
-        } else {
-          alert(response.statusText);
-        }
-      }
-}; 
+    }
+  })
+})
+module.exports = uploadS3;
+
+const newItemFormHandler = async (event) => {
+  event.preventDefault();
+  const title = document.querySelector('#title').value.trim();
+  const description = document.querySelector('#desription').value.trim();
+  const category = document.querySelector('#category').value;
+  const offered = document.querySelector('#offered').value.trim();
+  if (title && description && category && offered) {
+    const response = await fetch('/api/users', {
+      method: 'POST',
+      body: JSON.stringify({ title, description, category, offered }),
+      headers: { 'Content-Type': 'application/json' },
+    });
+    console.log(response);
+    if (response.ok) {
+      document.location.replace('/');
+    } else {
+      alert(response.statusText);
+    }
+  }
+};
 
 document
   .querySelector("#new-ad-form")
