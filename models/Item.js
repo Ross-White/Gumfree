@@ -19,9 +19,6 @@ Item.init(
         description: {
             type: DataTypes.STRING,
         },
-        offered: {
-            type: DataTypes.BOOLEAN,
-        },
         available: {
             type: DataTypes.BOOLEAN,
         },

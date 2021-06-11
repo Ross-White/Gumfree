@@ -2,7 +2,6 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection.js');
 
 class Categories extends Model {
-    // check pw function
 }
 
 Categories.init(
