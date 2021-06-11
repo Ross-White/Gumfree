@@ -5,11 +5,8 @@
         </p>
         <p> Description: </p>
         <textarea name="description" maxlength="400" id="description">Enter your product description</textarea>
-        <p> Quantity:
-            <input type="text" name="quantity" id="quantity" />
-        </p>
         <p> Category:
-            <select name="category" id="category">
+            <select name="category_id" id="category_id">
                 <option value="1" id="furniture">Furniture</option>
                 <option value="3" id="transport">Transport</option>
                 <option value="4" id="electronics">Electronics</option>
@@ -18,11 +15,6 @@
                 <option value="5" id="clothing">Clothing</option>
             </select>
         </p>
-        <p> Offered:
-            <input type="radio" name="offered" checked="checked" id="offered" />Yes
-            <input type="radio" name="offered" />No
-        </p>
-        <input type="text" placeholder="filename" name="desc" />
         <input type="file" name="product-image" />
         <button type="submit" value="submit">Submit</button>
     </form>
