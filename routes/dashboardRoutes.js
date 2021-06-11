@@ -9,7 +9,8 @@ router.get('/', withAuth, async (req, res) => {
     try {
         const itemData = await Item.findAll({
             where: {
-                user_id: req.session.user_id
+                user_id: req.session.user_id,
+                available: true,
             }
         }
         );
