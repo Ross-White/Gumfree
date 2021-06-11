@@ -5,9 +5,11 @@
         <a href="/dashboard/additem" class="md:col-start-2 flex border-2 h-12 rounded justify-center bg-gray-600 items-center hover:bg-gray-500 text-gray-100 hover:text-gray-50"><p>Add new item</p>
         </a>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4 p-4"></div>
+    <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4 p-4">
         {{#if items}}
-            {{>item-card}}
+            {{#each items as |item|}}
+                {{>item-card isOwner=true}}
+            {{/each}}
         {{/if}}
     </div>
 </div>
