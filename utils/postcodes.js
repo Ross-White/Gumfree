@@ -10,7 +10,5 @@ async function getLocation(postcode) {
   return admin_district;
 }
 
-getLocation('M169RE');
-
 module.exports = getLocation;
 
