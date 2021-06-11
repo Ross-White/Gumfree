@@ -9,13 +9,14 @@ router.get('/', withAuth, async (req, res) => {
     try {
         const itemData = await Item.findAll({
             where: {
-                user_id: req.session.user_id
+                user_id: req.session.user_id,
+                available: true,
             }
         }
         );
-        const plainData = itemData.map((item) => item.get({ plain: true }))
+        const items = itemData.map((item) => item.get({ plain: true }))
         res.render('dashboard', {
-        plainData,
+        items,
         logged_in: req.session.logged_in,
         isOwner: true,
     });
