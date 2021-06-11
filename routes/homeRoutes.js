@@ -30,6 +30,7 @@ router.get('/location', withAuth, async (req, res) => {
         const itemData = await Item.findAll({
             where: {
                 location: req.session.location,
+                available: true,
             },
             include: 
             {
