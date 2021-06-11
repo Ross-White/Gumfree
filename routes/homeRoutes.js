@@ -40,7 +40,8 @@ router.get('/location', withAuth, async (req, res) => {
         });
         const items = itemData.map((item) =>item.get({ plain: true }));
         res.render('all-items', {
-            items
+            items,
+            logged_in: req.session.logged_in
         })
     } catch (err) {
         res.status(400).json(err)
