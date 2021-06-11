@@ -1,10 +1,13 @@
 const router = require('express').Router();
-const { User, Item, Categories } = require('../models');
+const { User, Item } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
     try {
         const itemData = await Item.findAll({
+            where: {
+                available: true,
+            },
             include: 
             {
                 model: User,
@@ -20,26 +23,13 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
-router.get('/:id', async (req, res) => {
-    try {
-        const itemData = await Item.findByPk(req.params.id,{
-            include: 
-            {
-                model: User,
-                attributes: ["username", "email", "location"]
-            },
-        });
-        res.status(200).json(itemData);
-    } catch (err) {
-        res.status(400).json(err)
-    }
-});
 
 router.get('/category/:id', withAuth, async (req, res) => {
     try {
         const itemData = await Item.findAll({
             where: {
                 category_id: req.params.id,
+                available: true
             },
 
             include: {
@@ -47,7 +37,6 @@ router.get('/category/:id', withAuth, async (req, res) => {
             }
         })
         const items = itemData.map((item) => item.get({ plain: true }))
-        console.log(items)
         res.render('items-page', {
             items,
             logged_in: req.session.logged_in
