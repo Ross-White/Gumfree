@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Item, Categories } = require('../models');
+const { Item } = require('../models');
 const withAuth = require('../utils/auth');
 const uploadS3 = require('../utils/multers3');
 
@@ -26,11 +26,14 @@ router.get('/', withAuth, async (req, res) => {
 })
 
 router.get('/additem', async (req, res) => {
-    res.render('new-ad')
+    res.render('new-ad', {
+        logged_in: req.session.logged_in
+    })
 });
 
 router.post('/formsub', uploadS3.single('product-image'), async (req, res, next) => {
         try {
+            console.log(req.body);
             await Item.create({
                 title: req.body.title,
                 description: req.body.description,

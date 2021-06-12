@@ -2,148 +2,156 @@
     {
         "title": "Sofa",
         "description": "Dirty old sofa",
-        "offered": true,
         "available": true,
         "user_id": 1,
         "location": "Rossendale",
         "category_id": 1,
-        "image_url": "https://www.boconcept.com/on/demandware.static/-/Sites-master-catalog/default/dw7429ad62/images/710000/719958.jpg"
+        "image_url": "https://multer-gumfree-bucket.s3.amazonaws.com/1623437800205sofa.jpg"
     },
     {
         "title": "Bike",
         "description": "Hipster fixie bike",
-        "offered": true,
         "available": true,
         "user_id": 2,
         "location": "Manchester",
         "category_id": 3,
-        "image_url": "https://www.boconcept.com/on/demandware.static/-/Sites-master-catalog/default/dw7429ad62/images/710000/719958.jpg"
+        "image_url": "https://i2.wp.com/www.londoncyclist.co.uk/wp-content/uploads/2014/06/foffa-bike.jpg?w=800&ssl=1"
     },
     {
         "title": "Garden furniture",
         "description": "Set of table and six chairs for the garden",
-        "offered": false,
         "available": true,
         "user_id": 2,
         "location": "Manchester",
         "category_id": 2,
-        "image_url": "https://www.boconcept.com/on/demandware.static/-/Sites-master-catalog/default/dw7429ad62/images/710000/719958.jpg"
+        "image_url": "https://www.rattangardenfurnitureltd.co.uk/pub/media/mageplaza/blog/post/e/l/elizebeth_dining_group_with_stools_champagne_2__1.jpg"
     },
     {
         "title": "Used laptop",
         "description": "Two year old Huawei laptop, Windows 10",
-        "offered": true,
         "available": true,
         "user_id": 3,
         "location": "Manchester",
-        "category_id": 4
+        "category_id": 4,
+        "image_url": "https://1ar9j71l53so3c6opq3wrf9k-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/442351863_43b04497aa_b.jpg"
     },
     {
         "title": "BBQ",
         "description": "Large black Weber kettle BBQ",
-        "offered": true,
         "available": true,
         "user_id": 3,
         "location": "Manchester",
-        "category_id": 2
+        "category_id": 2,
+        "image_url": "https://i.ebayimg.com/images/g/gX0AAOSwZmFgtRQM/s-l1600.jpg"
+
     },
     {
         "title": "Hats",
         "description": "Collection of home made bobble hats",
-        "offered": true,
         "available": true,
         "user_id": 4,
         "location": "Oldham",
-        "category_id": 5
+        "category_id": 5,
+        "image_url": "https://cdn.lisaangel.co.uk/image/cache/data/product-images/aw19/dc-aw19/soft-knit-bobble-hat-o21a4678-472x472.jpg"
+
     },
     {
         "title": "Lord of the Rings",
         "description": "Hardback set of the Hobbit/Lord of the rings, great condition",
-        "offered": true,
         "available": true,
         "user_id": 5,
         "location": "Salford",
-        "category_id": 6
+        "category_id": 6,
+        "image_url": "https://img.jakpost.net/c/2020/01/17/2020_01_17_84820_1579236226._large.jpg"
+
     },
     {
         "title": "Encycolpedias",
         "description": "Full set of Encyclopedia Brittanica",
-        "offered": true,
         "available": true,
         "user_id": 6,
         "location": "Manchester",
-        "category_id": 6
+        "category_id": 6,
+        "image_url": "https://i.ebayimg.com/images/g/h1wAAOSwzJBgKvSm/s-l1600.jpg"
+
     },
     {
         "title": "Electric scooter",
         "description": "Used electric scooter, slightly damaged from a crash",
-        "offered": true,
         "available": true,
         "user_id": 7,
         "location": "Rochdale",
-        "category_id": 3
+        "category_id": 3,
+        "image_url": "https://www.thesun.co.uk/wp-content/uploads/2020/01/NINTCHDBPICT000553137473-1.jpg?crop=0px%2C396px%2C2600px%2C1734px&resize=1040%2C692"
+
     },
     {
         "title": "LED TV",
         "description": "42 inch Samsung LED TV",
-        "offered": true,
         "available": true,
         "user_id": 8,
         "location": "Salford",
-        "category_id": 4
+        "category_id": 4,
+        "image_url": "https://media.karousell.com/media/photos/products/2018/01/31/used_samsung_smart_tv_46_inches_led_tv__lcd_tv_wifi_internet_tv_hdmi_usb_tv_builtin_apps_5500ar_seri_1517365388_a202243b.jpg"
+
     },
     {
         "title": "Dining table and chairs",
         "description": "Mid century teak dining table with 6 chairs",
-        "offered": false,
         "available": true,
         "user_id": 9,
         "location": "Stockport",
-        "category_id": 1
+        "category_id": 1,
+        "image_url": "https://cdn.shopify.com/s/files/1/0228/1503/products/vintage_teak_mid_century_mcintosh_extending_table_chairs.9_ed980498-7aa3-4c7b-8e81-3729085d6303_900x.JPG?v=1571266928"
+
     },
     {
         "title": "Tuxedo",
         "description": "Bespoke tuxedo, no longer fits me since lockdown",
-        "offered": true,
         "available": true,
         "user_id": 5,
         "location": "Salford",
-        "category_id": 5
+        "category_id": 5,
+        "image_url": "https://canary.contestimg.wish.com/api/webimage/5e75db44a334865b575846a6-large.jpg?cache_buster=b35479cf0b8b8a49540b225e84d70eca"
+
     },
     {
         "title": "Mattress",
         "description": "King Size pocket sprung, memory foam mattress",
-        "offered": true,
         "available": true,
         "user_id": 6,
         "location": "Manchester",
-        "category_id": 1
+        "category_id": 1,
+        "image_url": "https://unrealfacts.b-cdn.net/wp-content/uploads/2013/03/tumblr_lno4h91lkR1qiw2fzo1_500.jpg"
+
     },
     {
         "title": "Coffee Machine",
         "description": "Gaggia classic espresso machine",
-        "offered": true,
         "available": true,
         "user_id": 6,
         "location": "Manchester",
-        "category_id": 4
+        "category_id": 4,
+        "image_url": "https://i.ebayimg.com/images/g/c4sAAOSwuvtgoqGd/s-l1600.jpg"
+
     },
     {
         "title": "Holy Books",
         "description": "Collection of holy books including: Bible, Torah, Quran, Vedas, Tipitaka",
-        "offered": true,
         "available": true,
         "user_id": 8,
         "location": "Salford",
-        "category_id": 6
+        "category_id": 6,
+        "image_url": "https://qph.fs.quoracdn.net/main-qimg-78f3dc533f86748d2ee0377afb29e2fe.webp"
+
     },
     {
         "title": "Skateboards",
         "description": "Collection of 5 skateboards",
-        "offered": true,
         "available": true,
         "user_id": 9,
         "location": "Stockport",
-        "category_id": 3
+        "category_id": 3,
+        "image_url": "https://cdn11.bigcommerce.com/s-j2hxjs/images/stencil/800x800/uploaded_images/collection-2.jpg?t=1549302890"
     }
 ]

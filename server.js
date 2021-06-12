@@ -8,6 +8,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const helmet = require('helmet');
 
 const app = express();
+
 app.use(helmet({
     contentSecurityPolicy: false,
 }));
