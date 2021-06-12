@@ -1,12 +1,12 @@
 <div href="dashboard/additem" class="min-h-screen bg-gray-50">
     <form method="post" action="formsub" id="new-ad-form" enctype="multipart/form-data">
-        <p> Name of your product:
+        <p class="block text-gray-700 text-sm font-bold mb-2"> Name of your product:
             <input type="text" name="title" maxlength="50" id="title" />
         </p>
-        <p> Description: </p>
+        <p class="block text-gray-700 text-sm font-bold mb-2">Description: </p>
         <textarea name="description" maxlength="400" id="description">Enter your product description</textarea>
-        <p> Category:
-            <select name="category_id" id="category_id">
+        <p class="block text-gray-700 text-sm font-bold mb-2"> Category:
+           <select name="category_id" id="category_id">
                 <option value="1" id="furniture">Furniture</option>
                 <option value="3" id="transport">Transport</option>
                 <option value="4" id="electronics">Electronics</option>
@@ -16,6 +16,6 @@
             </select>
         </p>
         <input type="file" name="product-image" />
-        <button type="submit" value="submit">Submit</button>
+        <button type="submit" value="submit" "bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Submit</button>
     </form>
 </div>
