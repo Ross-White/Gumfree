@@ -1,13 +1,17 @@
-<div class="min-h-screen bg-gray-50">
-    <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-4 p-4">
-        <div href="dashboard/additem" class="min-h-screen bg-gray-50">
-            <form method="post" action="formsub" id="new-ad-form" enctype="multipart/form-data">
-                <p> Name of your product:
-                    <input type="text" name="title" maxlength="50" id="title" />
-                </p>
-                <p> Description: </p>
-                <textarea name="description" maxlength="400" id="description">Enter your product description</textarea>
-                <p> Category:
+<div class="flex justify-center py-4">
+    <div class="w-full max-w-xs">
+        <div href="dashboard/additem" class="min-h-screen">
+            <form method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="formsub" id="new-ad-form"
+                enctype="multipart/form-data">
+                <label class="block text-gray-700 text-sm font-bold mb-2">Product title</label>
+                <input type="text" name="title" maxlength="50" id="title"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+
+
+                <label class="mt-4 block text-gray-700 text-sm font-bold mb-2">Description</label>
+                <textarea name="description" maxlength="400" id="description"
+                    class="shadow appearance-none border rounded h-40 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                <label class="block text-gray-700 text-sm font-bold mb-2">Category:
                     <select name="category_id" id="category_id">
                         <option value="1" id="furniture">Furniture</option>
                         <option value="3" id="transport">Transport</option>
@@ -16,9 +20,10 @@
                         <option value="2" id="garden">Garden</option>
                         <option value="5" id="clothing">Clothing</option>
                     </select>
-                </p>
+                </label>
+
                 <div>
-                    <label class="block text-m font-medium text-gray-700">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
                         Upload a photo of your item
                     </label>
                     <div
@@ -44,7 +49,14 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" value="submit">Submit</button>
+                <div class="mt-4 flex justify-center">
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="submit">
+                        Submit
+                    </button>
+                </div>
+
             </form>
         </div>
     </div>
