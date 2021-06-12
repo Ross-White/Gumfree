@@ -1,6 +1,7 @@
 const fetch = require("node-fetch");
 
 async function getLocation(postcode) {
+  console.log(postcode);
   const data = await fetch(`https://api.postcodes.io/postcodes/${postcode}`, {
     method: "GET",
   });
