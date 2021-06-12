@@ -6,6 +6,7 @@ An app for sharing items in your local area.
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
+* [Screenshot](#screenshot)
 * [Contributions](#contributions)
 
 ## Description
@@ -17,6 +18,10 @@ The backend functionality of the app comes from Node.js, Express, MySQL and Sequ
 ## Installation 
 
 Run npm i to install all dependencies. Create a .env file with your MySql credentials and database name.
+
+## Screenshot
+
+![Screenshot of depolyed app.](./docs/assets/images/Screenshot.JPG)
 
 ## Contributions
 
